@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/jumlah1"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/jumlah1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Total Impression :"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:text="Fixed Header"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20sp" />-->
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:gravity="center" >
+
+
+    </RelativeLayout>
+
+    <!-- Scrollable Item below header and above footer -->
+
+
+
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent"
+        >
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4356985467396850/8805316003" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
